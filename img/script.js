@@ -18,8 +18,15 @@ const criarDiv = (texto) => {
     div.textContent = texto;
     div.id = texto;
     document.getElementById("container").appendChild(div);
-}
+};
 
 const exibir = (sons) => Object.key(sons).forEach(criarDiv);
 
-exibir(sons)
+const ativarDiv = (sons) => {
+    const letra = evento.target.id;
+    tocarSom(letra);
+};
+
+exibir(sons);
+
+document.getElementById('container').addEventListener('click', ativarDiv);
