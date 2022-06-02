@@ -20,7 +20,7 @@ const criarDiv = (texto) => {
     document.getElementById("container").appendChild(div);
 };
 
-const exibir = (sons) => Object.key(sons).forEach(criarDiv);
+const exibir = (sons) => Object.keys(sons).forEach(criarDiv);
 
 const ativarDiv = (sons) => {
     const letra = evento.target.id;
