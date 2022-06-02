@@ -36,8 +36,8 @@ main{
 
 .key{
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     align-items: center;
     justify-content: center;
     background-color: #000000BB;
@@ -46,4 +46,11 @@ main{
     border: 3px solid white;
     user-select: none;
     cursor: pointer;
+    transition: transform .2s;
+}
+
+.active{
+    transform: scale();
+    border-color: #fc0;
+    box-shadow: 0 0 50px #fc0;
 }
