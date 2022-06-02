@@ -22,9 +22,17 @@ const criarDiv = (texto) => {
 
 const exibir = (sons) => Object.keys(sons).forEach(criarDiv);
 
-const ativarDiv = (sons) => {
+const tocarSom = (letra) => {
+    const audio = new Audio(`./sounds/${sons[letra]}`);
+    audio.play();
+}
+
+const ativarDiv = (evento) => {
     const letra = evento.target.id;
-    tocarSom(letra);
+    const letraPermitida = sons.hasOwnProperty(letra);
+    if (letraPermitida){
+        tocarSom(letra);
+    }
 };
 
 exibir(sons);
