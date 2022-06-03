@@ -1,4 +1,4 @@
-# Projeto-DRUMKIT
+# Projeto - DRUM KIT
 
 Criação de um DRUMKIT utilizando as tecnologias HTML, CSS e JS
 
